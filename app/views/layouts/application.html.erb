@@ -9,11 +9,12 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-  </head>
+    </head>    
+    <body>
+      <main class="mx-auto max-w-3xl">
+        <%= yield %>
+      </main>
 
-  <body>
-    <main class="mx-auto max-w-3xl">
-      <%= yield %>
-    </main>
+      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </body>
 </html>
